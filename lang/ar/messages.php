@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'dashboard_title' => 'النشر التلقائي على الشبكات',
+    'dashboard_subtitle' => 'الأتمتة اللحظية لنشر المواضيع والفيديوهات والمنتجات على تليجرام، فيسبوك، إكس (تويتر) وديسكورد.',
+
+    // Stats
+    'total_broadcasts' => 'إجمالي الإرسالات',
+    'successful_posts' => 'المنشورات الناجحة',
+    'failed_posts' => 'المحاولات الفاشلة',
+    'success_rate' => 'نسبة النجاح',
+    'active_channels' => 'القنوات المفعلة',
+    'today_broadcasts' => 'إرسالات اليوم',
+
+    // Navigation & Tabs
+    'tab_channels' => 'إعدادات قنوات التواصل',
+    'tab_triggers' => 'محفزات وقوالب النشر',
+    'tab_manual' => 'النشر اليدوي المباشر',
+    'tab_logs' => 'سجل عمليات النشر',
+
+    // Channels
+    'telegram_title' => 'قناة / مجموعة Telegram',
+    'telegram_desc' => 'نشر فوري عبر Telegram Bot API مع دعم بطاقات الصور وأزرار الروابط التفاعلية.',
+    'telegram_enable' => 'تفعيل النشر على Telegram',
+    'telegram_bot_token' => 'رمز البوت (Bot Token)',
+    'telegram_bot_token_help' => 'يمكنك الحصول عليه من @BotFather (مثال: 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11).',
+    'telegram_chat_id' => 'معرف القناة أو الدردشة (Chat ID)',
+    'telegram_chat_id_help' => 'معرف القناة مع @ (مثل: @mychannel) أو رقم Chat ID (مثل: -100123456789). تأكد من إضافة البوت كمدير في القناة.',
+    'telegram_template' => 'قالب رسالة Telegram',
+
+    'facebook_title' => 'صفحة فيسبوك (Facebook Page)',
+    'facebook_desc' => 'نشر التحديثات والصور على صفحة فيسبوك عبر Facebook Graph API.',
+    'facebook_enable' => 'تفعيل النشر على Facebook',
+    'facebook_page_id' => 'معرف الصفحة (Page ID)',
+    'facebook_access_token' => 'رمز وصول الصفحة (Page Access Token)',
+    'facebook_access_token_help' => 'رمز وصول دائم بصلحيات pages_manage_posts و pages_read_engagement من Facebook Developers.',
+    'facebook_template' => 'قالب منشور Facebook',
+
+    'twitter_title' => 'حساب إكس (X / Twitter)',
+    'twitter_desc' => 'نشر التغريدات وبطاقات المعاينة تلقائياً عبر واجهة برمجة تطبيقات Twitter API v2.',
+    'twitter_enable' => 'تفعيل النشر على X (Twitter)',
+    'twitter_api_key' => 'مفتاح API Key (Consumer Key)',
+    'twitter_api_secret' => 'المفتاح السري API Key Secret',
+    'twitter_access_token' => 'رمز الوصول Access Token',
+    'twitter_access_token_secret' => 'رمز الوصول السري Access Token Secret',
+    'twitter_bearer_token' => 'رمز Bearer Token (اختياري)',
+    'twitter_template' => 'قالب التغريدة (حد أقصى 280 حرف)',
+
+    'discord_title' => 'قناة ديسكورد (Discord Webhook)',
+    'discord_desc' => 'إرسال بطاقات تضمين (Rich Embeds) احترافية مباشرة إلى قناة Discord.',
+    'discord_enable' => 'تفعيل النشر على Discord',
+    'discord_webhook_url' => 'رابط الويب هوك (Discord Webhook URL)',
+    'discord_template' => 'قالب وصف بطاقة Discord',
+
+    'adstn_title' => 'شبكة ومنصة ADStn (ADStn Network)',
+    'adstn_desc' => 'النشر التلقائي المباشر على منصة ADStn عبر واجهة برمجة تطبيقات المطورين الرسمية (Developer API v1).',
+    'adstn_enable' => 'تفعيل النشر على منصة ADStn',
+    'adstn_api_url' => 'رابط منصة ADStn (API Base URL)',
+    'adstn_access_token' => 'رمز وصول المطور (Developer Access Token)',
+    'adstn_access_token_help' => 'يمكنك توليده من لوحة المطورين على https://www.adstn.ovh/developer/apps بصلاحية user.content.write.',
+    'adstn_template' => 'قالب منشور ADStn',
+
+    // Triggers & Templates
+    'triggers_title' => 'خيارات المحفزات التلقائية',
+    'triggers_desc' => 'حدد أنواع المحتوى التي يتم نشرها فور إنشائها تلقائياً على القنوات المفعلة.',
+    'auto_topic' => 'نشر مواضيع المنتدى الجديدة فور إنشائها',
+    'auto_video' => 'نشر الفيديوهات والمقاطع المرئية الجديدة فور رفعها',
+    'auto_product' => 'نشر المنتجات والعروض الجديدة في السوق',
+    'auto_news' => 'نشر المقالات والأخبار الجديدة',
+    'auto_directory' => 'نشر المواقع المضافة لدليل المواقع',
+
+    'formatting_options' => 'خيارات التنسيق والوسوم',
+    'utm_tracking' => 'إضافة وسوم التتبع (UTM Tracking) للروابط',
+    'utm_tracking_help' => 'إضافة ?utm_source=telegram&utm_medium=social_autopost لمتابعة الزيارات بدقة في Google Analytics.',
+    'default_hashtags' => 'الهاشتاجات الافتراضية',
+    'default_hashtags_help' => 'وسوم مفصولة بمسافات (مثل: #MYADS #أخبار #عروض).',
+    'include_button' => 'إدراج زر الرابط المباشر (Inline Button)',
+    'button_text' => 'نص الزر التفاعلي',
+    'max_summary_length' => 'الحد الأقصى لطول ملخص المحتوى (حرف)',
+    'template_tags_hint' => 'الوسوم المتاحة للاستخدام في القوالب: {title}، {url}، {summary}، {author}، {sitename}، {hashtags}',
+
+    // Manual Broadcast
+    'manual_broadcast_title' => 'بث ونشر يدوي مباشر',
+    'manual_broadcast_desc' => 'أرسل منشوراً مخصصاً أو شارك محتوى موجوداً فورياً على القنوات المحددة.',
+    'content_title' => 'عنوان المنشور / المحتوى',
+    'content_url' => 'رابط الصفحة / المحتوى',
+    'content_summary' => 'الوصف أو نص المنشور المخصص',
+    'content_image_url' => 'رابط صورة الغلاف (اختياري)',
+    'content_tags' => 'الوسوم والهاشتاجات (اختياري)',
+    'select_channels' => 'اختر قنوات البث',
+    'live_preview' => 'معاينة حية للمنشور',
+    'broadcast_now' => '🚀 بث ونشر الآن',
+
+    // Logs
+    'logs_title' => 'سجل عمليات النشر والتقارير',
+    'channel' => 'القناة',
+    'content_type' => 'نوع المحتوى',
+    'title' => 'العنوان',
+    'status' => 'الحالة',
+    'status_code' => 'كود الاستجابة',
+    'published_at' => 'وقت النشر',
+    'actions' => 'الإجراءات',
+    'status_success' => 'ناجح',
+    'status_failed' => 'فشل',
+    'status_pending' => 'قيد الانتظار',
+    'retry' => 'إعادة المحاولة',
+    'view_payload' => 'عرض الاستجابة',
+    'clear_logs' => 'مسح السجل',
+    'export_csv' => 'تصدير CSV',
+    'no_logs_found' => 'لا توجد سجلات نشر حالياً.',
+
+    // Actions & Feedback
+    'save_settings' => 'حفظ جميع الإعدادات',
+    'test_connection' => '⚡ اختبار الاتصال الآن',
+    'testing' => 'جاري الاختبار...',
+    'settings_saved_success' => 'تم حفظ إعدادات النشر التلقائي بنجاح!',
+    'manual_publish_success' => 'تم بث المحتوى بنجاح على :count قناة/قنوات!',
+    'manual_publish_failed' => 'فشلت عملية البث، يرجى مراجعة إعدادات وتوكنات القنوات.',
+    'retry_success' => 'تمت إعادة محاولة النشر بنجاح!',
+    'retry_failed' => 'فشلت إعادة الإرسال: :error',
+    'logs_cleared_success' => 'تم تفريغ سجل العمليات بنجاح!',
+    'confirm_clear_logs' => 'هل أنت متأكد من رغبتك في مسح كافة سجلات النشر؟',
+];

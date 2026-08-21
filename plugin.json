@@ -1,0 +1,12 @@
+{
+    "name": "Social Auto Poster",
+    "slug": "myads-social-auto-poster",
+    "version": "1.0.0",
+    "author": "MrGhozzi",
+    "description": "Automated real-time publishing of forum topics, videos, products, news, and directory listings to Telegram Channels, Facebook Pages, X (Twitter), and Discord Webhooks.",
+    "thumbnail": "thumbnail.png",
+    "siteweb": "https://github.com/mrghozzi",
+    "latest": "https://github.com/mrghozzi/myads-social-auto-poster/releases/latest",
+    "ADStn_url": "myads-social-auto-poster",
+    "min_myads": "4.5.0"
+}

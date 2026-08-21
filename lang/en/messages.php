@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'dashboard_title' => 'Social Auto Poster',
+    'dashboard_subtitle' => 'Automated real-time publishing of topics, videos, products, and news to Telegram, Facebook, X (Twitter), and Discord.',
+
+    // Stats
+    'total_broadcasts' => 'Total Broadcasts',
+    'successful_posts' => 'Successful Posts',
+    'failed_posts' => 'Failed Attempts',
+    'success_rate' => 'Success Rate',
+    'active_channels' => 'Active Channels',
+    'today_broadcasts' => 'Today Broadcasts',
+
+    // Navigation & Tabs
+    'tab_channels' => 'Social Channels',
+    'tab_triggers' => 'Triggers & Templates',
+    'tab_manual' => 'Manual Broadcast',
+    'tab_logs' => 'Transmission Logs',
+
+    // Channels
+    'telegram_title' => 'Telegram Channel / Group',
+    'telegram_desc' => 'Instant publishing via Telegram Bot API with photo cards and interactive inline URL buttons.',
+    'telegram_enable' => 'Enable Telegram Publishing',
+    'telegram_bot_token' => 'Bot Token',
+    'telegram_bot_token_help' => 'Get this from @BotFather (e.g., 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11).',
+    'telegram_chat_id' => 'Channel or Chat ID',
+    'telegram_chat_id_help' => 'Channel username with @ (e.g. @mychannel) or numeric ID (e.g. -100123456789). Ensure bot is an Admin in the channel.',
+    'telegram_template' => 'Telegram Message Template',
+
+    'facebook_title' => 'Facebook Page',
+    'facebook_desc' => 'Post updates and photo cards to your Facebook Page via Facebook Graph API.',
+    'facebook_enable' => 'Enable Facebook Publishing',
+    'facebook_page_id' => 'Page ID',
+    'facebook_access_token' => 'Page Access Token',
+    'facebook_access_token_help' => 'Permanent Page Access Token with pages_manage_posts and pages_read_engagement permissions from Facebook Developers.',
+    'facebook_template' => 'Facebook Post Template',
+
+    'twitter_title' => 'X (Twitter) Account',
+    'twitter_desc' => 'Automatically tweet updates and link previews via official Twitter API v2.',
+    'twitter_enable' => 'Enable X (Twitter) Publishing',
+    'twitter_api_key' => 'API Key (Consumer Key)',
+    'twitter_api_secret' => 'API Key Secret',
+    'twitter_access_token' => 'Access Token',
+    'twitter_access_token_secret' => 'Access Token Secret',
+    'twitter_bearer_token' => 'Bearer Token (Optional)',
+    'twitter_template' => 'Tweet Template (Max 280 chars)',
+
+    'discord_title' => 'Discord Webhook',
+    'discord_desc' => 'Deliver rich aesthetic embed cards directly into Discord channels via Webhooks.',
+    'discord_enable' => 'Enable Discord Publishing',
+    'discord_webhook_url' => 'Discord Webhook URL',
+    'discord_template' => 'Discord Embed Description Template',
+
+    'adstn_title' => 'ADStn Network (adstn.ovh)',
+    'adstn_desc' => 'Direct automated broadcasting to ADStn Platform via official Developer REST API v1.',
+    'adstn_enable' => 'Enable ADStn Network Publishing',
+    'adstn_api_url' => 'ADStn Platform URL (API Base URL)',
+    'adstn_access_token' => 'Developer Access Token',
+    'adstn_access_token_help' => 'Generate your access token at https://www.adstn.ovh/developer/apps with user.content.write scope.',
+    'adstn_template' => 'ADStn Post Template',
+
+    // Triggers & Templates
+    'triggers_title' => 'Auto-Publish Triggers',
+    'triggers_desc' => 'Configure which content types automatically trigger real-time social broadcasts when published.',
+    'auto_topic' => 'Publish new forum topics upon creation',
+    'auto_video' => 'Publish new videos and clips upon upload',
+    'auto_product' => 'Publish new store products upon submission',
+    'auto_news' => 'Publish new articles and news',
+    'auto_directory' => 'Publish new web directory listings',
+
+    'formatting_options' => 'Formatting & Tag Options',
+    'utm_tracking' => 'Append UTM Tracking tags to URLs',
+    'utm_tracking_help' => 'Appends ?utm_source=telegram&utm_medium=social_autopost for precise Google Analytics tracking.',
+    'default_hashtags' => 'Default Hashtags',
+    'default_hashtags_help' => 'Space separated hashtags (e.g., #MYADS #Updates #Deals).',
+    'include_button' => 'Include Direct Link Inline Button',
+    'button_text' => 'Interactive Button Label',
+    'max_summary_length' => 'Max Summary Length (Characters)',
+    'template_tags_hint' => 'Available placeholder tags: {title}, {url}, {summary}, {author}, {sitename}, {hashtags}',
+
+    // Manual Broadcast
+    'manual_broadcast_title' => 'Manual Broadcast',
+    'manual_broadcast_desc' => 'Broadcast custom text or existing content immediately to selected channels.',
+    'content_title' => 'Post / Content Title',
+    'content_url' => 'Target URL',
+    'content_summary' => 'Description / Custom Message',
+    'content_image_url' => 'Cover Image URL (Optional)',
+    'content_tags' => 'Tags / Hashtags (Optional)',
+    'select_channels' => 'Select Channels',
+    'live_preview' => 'Live Post Preview',
+    'broadcast_now' => '🚀 Broadcast Now',
+
+    // Logs
+    'logs_title' => 'Transmission Logs & Reports',
+    'channel' => 'Channel',
+    'content_type' => 'Content Type',
+    'title' => 'Title',
+    'status' => 'Status',
+    'status_code' => 'Status Code',
+    'published_at' => 'Published At',
+    'actions' => 'Actions',
+    'status_success' => 'Success',
+    'status_failed' => 'Failed',
+    'status_pending' => 'Pending',
+    'retry' => 'Retry',
+    'view_payload' => 'View Payload',
+    'clear_logs' => 'Clear Logs',
+    'export_csv' => 'Export CSV',
+    'no_logs_found' => 'No transmission logs found.',
+
+    // Actions & Feedback
+    'save_settings' => 'Save All Settings',
+    'test_connection' => '⚡ Test Connection Now',
+    'testing' => 'Testing...',
+    'settings_saved_success' => 'Social Auto Poster settings saved successfully!',
+    'manual_publish_success' => 'Broadcast dispatched successfully to :count channel(s)!',
+    'manual_publish_failed' => 'Broadcast failed. Please check your channel credentials.',
+    'retry_success' => 'Post retried successfully!',
+    'retry_failed' => 'Retry failed: :error',
+    'logs_cleared_success' => 'Transmission logs cleared successfully!',
+    'confirm_clear_logs' => 'Are you sure you want to clear all transmission logs?',
+];
