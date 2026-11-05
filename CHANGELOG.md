@@ -2,6 +2,12 @@
 
 All notable changes to the `myads-social-auto-poster` plugin will be documented in this file.
 
+## [1.1.0] - 2026-11-05
+### Added / Enhanced
+- **MYADS v4.7.0 Platform Compatibility**: Tested and verified multi-channel social publishing under Laravel 12.
+- **Max Version Bump**: Updated `max_myads` requirement to `4.7.x`.
+- **Navigation Integration**: Explicitly registered `settings_url` to `/admin/social-auto-poster`.
+
 ## [1.0.0] - 2026-08-22
 ### Added
 * Initial release of **MYADS Social Auto Poster**.
