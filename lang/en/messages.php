@@ -68,6 +68,7 @@ return [
     'auto_product' => 'Publish new store products upon submission',
     'auto_news' => 'Publish new articles and news',
     'auto_directory' => 'Publish new web directory listings',
+    'auto_group' => 'Publish newly created public community groups (/groups/*)',
 
     'formatting_options' => 'Formatting & Tag Options',
     'utm_tracking' => 'Append UTM Tracking tags to URLs',

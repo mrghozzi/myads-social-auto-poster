@@ -100,6 +100,7 @@ class SocialAutoPosterService
             'auto_product' => true,
             'auto_news' => true,
             'auto_directory' => false,
+            'auto_group' => true,
 
             // General & Formatting
             'utm_source_enabled' => true,
@@ -115,7 +116,7 @@ class SocialAutoPosterService
 
             foreach ($options as $option) {
                 $val = $option->o_valuer;
-                if (in_array($option->name, ['telegram_enabled', 'facebook_enabled', 'twitter_enabled', 'discord_enabled', 'adstn_enabled', 'auto_topic', 'auto_video', 'auto_product', 'auto_news', 'auto_directory', 'utm_source_enabled', 'include_button'], true)) {
+                if (in_array($option->name, ['telegram_enabled', 'facebook_enabled', 'twitter_enabled', 'discord_enabled', 'adstn_enabled', 'auto_topic', 'auto_video', 'auto_product', 'auto_news', 'auto_directory', 'auto_group', 'utm_source_enabled', 'include_button'], true)) {
                     $config[$option->name] = (bool) (int) $val;
                 } elseif (in_array($option->name, ['max_summary_length'], true)) {
                     $config[$option->name] = (int) $val;
@@ -146,6 +147,7 @@ class SocialAutoPosterService
             'auto_product',
             'auto_news',
             'auto_directory',
+            'auto_group',
             'utm_source_enabled',
             'include_button',
         ];

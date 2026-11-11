@@ -494,6 +494,11 @@
                                         <label class="form-check-label fw-semibold" for="tr_dir">{{ __('social_auto_poster::messages.auto_directory') }}</label>
                                     </div>
 
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" name="auto_group" value="1" id="tr_group" {{ !empty($config['auto_group']) ? 'checked' : '' }}>
+                                        <label class="form-check-label fw-semibold" for="tr_group">{{ __('social_auto_poster::messages.auto_group') }}</label>
+                                    </div>
+
                                     <hr class="my-4">
 
                                     <h5 class="fw-bold mb-3"><i class="feather-sliders text-info me-2"></i>{{ __('social_auto_poster::messages.formatting_options') }}</h5>

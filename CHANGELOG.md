@@ -2,6 +2,13 @@
 
 All notable changes to the `myads-social-auto-poster` plugin will be documented in this file.
 
+## [1.2.0] - 2026-11-11
+### Added / Enhanced
+- **Public Community Groups Auto-Broadcasting Support:**
+  - Added Eloquent observer for `Group::created` to automatically announce newly created public community groups (`/groups/{slug}`) to Telegram, Facebook, X (Twitter), and Discord.
+  - Automatically incorporates group avatar, category badge, and short description into social broadcast templates.
+  - Added `auto_group` toggle in admin console with full bilingual support (English / Arabic).
+
 ## [1.1.0] - 2026-11-05
 ### Added / Enhanced
 - **MYADS v4.7.0 Platform Compatibility**: Tested and verified multi-channel social publishing under Laravel 12.

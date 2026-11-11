@@ -225,6 +225,40 @@ if (!app()->runningInConsole() || app()->environment('testing')) {
             // Suppress
         }
     });
+
+    // F. Community Groups (New Public Groups)
+    if (class_exists(\App\Models\Group::class)) {
+        \App\Models\Group::created(function ($group) {
+            try {
+                $config = social_auto_poster_service()->getConfig();
+                if (empty($config['auto_group'])) {
+                    return;
+                }
+
+                if ($group->status === \App\Models\Group::STATUS_ACTIVE && $group->privacy === \App\Models\Group::PRIVACY_PUBLIC && !empty($group->slug)) {
+                    $url = route('groups.show', $group->slug);
+                    $imageUrl = $group->avatarUrl();
+                    $categoryLabel = \App\Models\Group::categoryLabel($group->category);
+                    $title = "🚀 New Community Group: " . $group->name . " [" . $categoryLabel . "]";
+                    $summary = !empty($group->short_description) ? $group->short_description : ($group->description ?? $title);
+                    $author = $group->owner->username ?? (config('app.name') ?: 'MYADS');
+
+                    social_auto_poster_service()->publish(
+                        'group',
+                        (int) $group->id,
+                        (string) $title,
+                        $url,
+                        $imageUrl,
+                        (string) $summary,
+                        (string) $author,
+                        (string) $group->category
+                    );
+                }
+            } catch (\Throwable $e) {
+                // Suppress
+            }
+        });
+    }
 }
 
 // ─── 6. Admin Routes ───────────────────────────────────────────────────────────
